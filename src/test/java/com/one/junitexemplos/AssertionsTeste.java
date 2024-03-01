@@ -50,10 +50,10 @@ public class AssertionsTeste {
     void validarSeObjetoEstaNuloOuNao() {
 
         Pessoa pessoa = null;
-        assertNull(pessoa);
+        assertNull(pessoa);// validar se esta null
 
         pessoa = new Pessoa("Luciano", LocalDateTime.now());
-        assertNotNull(pessoa);
+        assertNotNull(pessoa); // não null
     }
 
     @Test
@@ -62,7 +62,7 @@ public class AssertionsTeste {
         double valor = 5.0;
         double outroValor = 5.0;
 
-        assertEquals(valor, outroValor);
+        assertEquals(valor, outroValor); // equals
     }
 
     @Test
@@ -71,7 +71,7 @@ public class AssertionsTeste {
         int x = 5;
         int y = 6;
 
-        assertNotEquals(5, 6);
+        assertNotEquals(5, 6); // equals
     }
 
     @Test
@@ -79,7 +79,7 @@ public class AssertionsTeste {
 
         boolean condicao = 5 + 6 == 12;
 
-        assertFalse(condicao);
+        assertFalse(condicao); // if false
     }
 
     @Test
@@ -87,6 +87,6 @@ public class AssertionsTeste {
 
         var condicao = 6 + 6 == 12;
 
-        assertTrue(condicao);
+        assertTrue(condicao); // verifying if is true
     }
 }
